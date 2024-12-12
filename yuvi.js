@@ -7,7 +7,7 @@ window.onscroll = () => {
         let top = window.screenY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
-        let id = sec.getAttribute;
+        let id = sec.getAttribute('id');
 
         if( top >= offset && top < offset + height){
             navlinks.forEach(links => {
@@ -22,6 +22,6 @@ window.onscroll = () => {
 
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
+    menuIcon.classList.toggle('fa-x');
     navbar.classList.toggle('active');
 }
